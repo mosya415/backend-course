@@ -26,3 +26,17 @@ HTTP-слой находится в `routers/`, правило модераци�
 ```bash
 python -m pytest -v tests
 ```
+
+## ДЗ 2. Asyncio и потоки
+
+Решения основной части и двух бонусов лежат в `hw2/`. Условия, тесты и
+заготовки взяты из [репозитория курса](https://github.com/dalegorov-study/auth/tree/b018e93d14e58a3021cc097aacdca7dab31958f5/homework).
+
+Тесты каждой задачи запускаются из её папки.
+
+```bash
+python -m pip install -r hw2/requirements.txt
+for task in hw2/0*/; do
+    (cd "$task" && python -m pytest -v) || break
+done
+```
